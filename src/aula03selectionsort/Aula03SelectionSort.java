@@ -46,6 +46,15 @@ public class Aula03SelectionSort {
         
         int location = 9;
         int result = 1;
+        
+        for (int count = 9; count < 16; count++) {
+            if (x[location] == x[location - 1]) {
+                result++;
+                location--;
+            } else {
+                count = 16;
+            }
+        }
  
         for (i = 0; i <= 9; i++) {
             System.out.println((i + 1) + "° número: " + x[i]);
